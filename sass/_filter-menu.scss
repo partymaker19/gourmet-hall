@@ -1,0 +1,32 @@
+.filter-menu {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    calc((1400px - 35px * 2) / 4 - (35px * 3 / 4))
+  );
+  grid-auto-rows: calc((1400px - 35px * 2) / 4 - (35px * 3 / 4));
+  grid-gap: 35px;
+  padding: 35px 35px 35px;
+  justify-content: center;
+  &__link {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 15px 0 #eee;
+    transition: box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    box-shadow: 0 0 15px 0 #ccc;
+  }
+
+  &__title {
+    position: absolute;
+    left: 10%;
+    bottom: 7%;
+    @include font($size: 2.5rem, $weight: 700, $height: 1.4rem);
+    color: black;
+  }
+}
