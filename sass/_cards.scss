@@ -43,6 +43,10 @@
     color: black;
   }
 
+  &__link:hover {
+    color: #079c5a;
+  }
+
   &__btn {
     width: 42%;
     display: flex;
@@ -72,6 +76,10 @@
     margin-top: 10px;
     @include font($size: 1.3rem, $weight: 400, $height: 1.6rem);
     color: gray;
+  }
+
+  &__basket-title {
+    margin: 0;
   }
 }
 
@@ -117,7 +125,7 @@
 
 .pagination .page-link {
   color: #079c5a;
-  @include font($size: 2.5rem, $weight: 400, $height: 2.5rem);
+  @include font($size: 2rem, $weight: 400, $height: 2.5rem);
 }
 
 .pagination .page-item.active .page-link {

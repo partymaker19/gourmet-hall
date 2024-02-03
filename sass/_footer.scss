@@ -3,6 +3,10 @@
   justify-content: space-around;
   padding: 20px;
   background-color: #180c05;
+  @include media-tablet {
+    flex-direction: column;
+    gap: 50px;
+  }
   &__contact {
     @include font($size: 3.5rem, $weight: 700, $height: 1rem);
     @extend %font-caveat;
@@ -68,16 +72,33 @@
     flex-direction: column;
   }
 
+  &__contact-block {
+    @include media-tablet {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__social-block {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include media-tablet {
+      order: 1;
+      align-items: center;
+      gap: 10px;
+    }
   }
 
   &__soc-title {
     @include font($size: 3.5rem, $weight: 700, $height: 4rem);
     @extend %font-caveat;
     color: white;
+    @include media-mobile {
+      @include font($size: 2.5rem, $weight: 700, $height: 4rem);
+    }
   }
 
   &__soc {

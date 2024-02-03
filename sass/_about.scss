@@ -1,5 +1,6 @@
+@import "../sass/constants";
+
 .about {
-  margin-top: 60px;
   padding-bottom: 20px;
   &__title {
     text-align: center;
@@ -13,12 +14,35 @@
     width: 100rem;
     @include font($size: 2rem, $weight: 400, $height: 3rem);
     @extend %font-prompt;
+    @include media-big-desctop {
+      width: 80rem;
+    }
+    @include media-desctop-small {
+      width: 60rem;
+    }
+    @include media-tablet {
+      width: 45rem;
+      @include font($size: 1.5rem, $weight: 400, $height: 3rem);
+    }
+    @include media-mobile {
+      width: 35rem;
+    }
   }
 
   &__info-text {
     width: 77rem;
     @include font($size: 2rem, $weight: 400, $height: 3rem);
     @extend %font-prompt;
+    @include media-desctop-small {
+      width: 60rem;
+    }
+    @include media-tablet {
+      width: 45rem;
+      @include font($size: 1.5rem, $weight: 400, $height: 3rem);
+    }
+    @include media-mobile {
+      width: 35rem;
+    }
   }
 
   &__info-title {
@@ -26,12 +50,21 @@
     @extend %font-caveat;
     color: #079c5a;
     text-align: center;
+    @include media-desctop-small {
+      @include font($size: 2.5rem, $weight: 400, $height: 3rem);
+    }
+    @include media-tablet {
+      @include font($size: 2rem, $weight: 400, $height: 3rem);
+    }
   }
 
   &__logo-word {
     @include font($size: 3.5rem, $weight: 400, $height: 3rem);
     @extend %font-caveat;
     color: #079c5a;
+    @include media-tablet {
+      @include font($size: 2.5rem, $weight: 400, $height: 3rem);
+    }
   }
 
   &__band {
@@ -51,11 +84,32 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @include media-big-desctop {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__info-text-block {
+    @include media-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__img-info-block {
     width: 30%;
     height: 25rem;
+    @include media-desctop-small {
+      width: 50%;
+    }
+    @include media-tablet {
+      width: 65%;
+    }
+    @include media-mobile {
+      width: 90%;
+    }
   }
 
   &__img-info-block img {

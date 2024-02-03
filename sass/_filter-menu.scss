@@ -1,15 +1,7 @@
 .filter-menu {
-  display: grid;
-  grid-template-columns: repeat(
-    3,
-    calc((1400px - 35px * 2) / 4 - (35px * 3 / 4))
-  );
-  grid-auto-rows: calc((1400px - 35px * 2) / 4 - (35px * 3 / 4));
-  grid-gap: 35px;
-  padding: 35px 35px 35px;
-  justify-content: center;
   &__link {
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative;
     border-radius: 5px;
     border: 1px solid #eee;
@@ -28,5 +20,13 @@
     bottom: 7%;
     @include font($size: 2.5rem, $weight: 700, $height: 1.4rem);
     color: black;
+  }
+}
+
+.row {
+  padding: 30px;
+  align-items: center;
+  @include media-mobile {
+    margin: 0;
   }
 }
