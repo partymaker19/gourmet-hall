@@ -625,7 +625,7 @@ h5 {
 }
 @media (max-width: 586px) {
   .big-card__main-container {
-    min-height: 100vh;
+    min-height: 60vh;
   }
 }
 .big-card__card-block {
