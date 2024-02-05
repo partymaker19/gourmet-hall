@@ -19,13 +19,16 @@
     align-items: center;
     justify-content: space-around;
     gap: 30px;
+    @include media-tablet {
+      justify-content: space-between;
+    }
   }
 
   &__nav-title {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    @include media-tablet {
+    @include media-desctop-small {
       display: none;
     }
   }
@@ -76,17 +79,24 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 20px;
-    padding-right: 20px;
-    // @include media-mobile {
-    //   flex-wrap: wrap;
-    //   justify-content: center;
-    // }
+    padding: 0 20px 10px 0;
+    @include media-mobile {
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+  }
+
+  &__btn-menu {
+    flex-wrap: wrap;
   }
 
   &__link-basket {
     display: flex;
     align-items: center;
     gap: 5px;
+    // @include media-mobile {
+    //   display: none;
+    // }
   }
 
   &__basket {

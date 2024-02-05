@@ -15,6 +15,25 @@
 
   <div class="container">
     <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../menu/menu.html">Меню</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#footer">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#filter-menu__link">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="header__logo-drop">
         <div class="header__logo-title">
           <div class="header__logo">
@@ -22,36 +41,35 @@
           </div>
           <div class="header__nav-title">
             <h1 class="header__title">Готовим изысканные роллы!</h1>
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li><a class="header__nav-link" href="#footer">Контакты</a></li>
-                <li><a class="header__nav-link" href="#filter-menu__link">О нас</a></li>
-                <li><a class="header__nav-link header__menu-link" href="menu/menu.html">Меню</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="header__btn-block">
-          <a class="btn btn-success" href="#" role="button">Вход</a>
-          <a class="btn btn-success header__link-basket" href="#" role="button">
-            <div class="header__basket">
-              <img src="../img/basket2.png" alt="basket">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
             </div>
-            Корзина
-          </a>
-          <div class="dropdown">
-            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Профиль
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Заказы</a></li>
-              <li><a class="dropdown-item" href="#">Админ панель</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Выход</a></li>
-            </ul>
+          </div>
+          <div class="header__btn-block header__btn-menu">
+            <a class="btn btn-success" href="#" role="button">Вход</a>
+            <a class="btn btn-success header__link-basket" href="#" role="button">
+              <div class="header__basket">
+                <img src="../img/basket2.png" alt="basket">
+              </div>
+              Корзина
+            </a>
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Профиль
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Заказы</a></li>
+                <li><a class="dropdown-item" href="#">Админ панель</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -68,7 +86,7 @@
               <p class="big-card__desc-text">8 шт/ 220 г/ 110.1 ккал</p>
               <p class="big-card__compound-text">водоросли нори 0,5,
                 рис 140 гр,
-                сыр креметто 55 гр,
+                сыр креметто 55 гр, <br>
                 свежий огурчик 20 гр,
                 лосось 30 гр</p>
               <p class="big-card__price">20р.

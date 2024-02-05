@@ -9,6 +9,13 @@
     "sidebar description"
     "small-categories small-categories";
   padding: 40px 40px 40px;
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 1fr; // Изменено на один столбец
+    grid-template-areas:
+      "sidebar"
+      "products";
+  }
 
   &__aside {
     grid-area: sidebar;
@@ -48,12 +55,16 @@
   }
 
   &__btn {
-    width: 42%;
+    width: 45%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    @include media-mobile {
+      width: 55%;
+    }
   }
 
   &__basket {
@@ -79,7 +90,14 @@
   }
 
   &__basket-title {
+    @include font($size: 1.5rem, $weight: 400, $height: 1rem);
     margin: 0;
+  }
+
+  &__row {
+    @include media-mobile {
+      padding: 10px !important;
+    }
   }
 }
 
