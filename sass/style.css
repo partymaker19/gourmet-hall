@@ -623,9 +623,9 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 586px) {
   .big-card__main-container {
-    min-height: 80vh;
+    min-height: 100vh;
   }
 }
 .big-card__card-block {
