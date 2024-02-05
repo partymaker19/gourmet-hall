@@ -79,7 +79,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 20px;
-    padding: 0 20px 10px 0;
+    padding: 10px 20px 10px 0;
     @include media-mobile {
       flex-wrap: wrap;
       justify-content: end;
