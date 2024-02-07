@@ -91,8 +91,46 @@
                 сыр креметто 55 гр, <br>
                 свежий огурчик 20 гр,
                 лосось 30 гр</p>
-              <p class="big-card__price">20р.
+              <div class="big-card__price-quantity-block">
+                <p class="big-card__price">20р.
+                </p>
+                <div class="big-card__quantity-controller">
+                  <button class="big-card__dark big-card__max">-</button>
+                  <span class="big-card__number">1</span>
+                  <button class="big-card__green big-card__max">+</button>
+                </div>
+              </div>
+              <p class="big-card__souce-text">Шапочку запеченных роллов можно полить соусом:
               </p>
+              <form class="big-card__form" action="">
+                <div class="big-card__souse-item">
+                  <label class="big-card__label">
+                    <input type="radio" name="souse-option" class="radio" value="1">
+                    <span class="radio-custom"></span>
+                    <span class="label">
+                      Мацарелла
+                    </span>
+                  </label>
+                </div>
+                <div class="big-card__souse-item">
+                  <label class="big-card__label">
+                    <input type="radio" name="souse-option" class="radio" value="2">
+                    <span class="radio-custom"></span>
+                    <span class="label">
+                      Чесночный
+                    </span>
+                  </label>
+                </div>
+                <div class="big-card__souse-item">
+                  <label class="big-card__label">
+                    <input type="radio" name="souse-option" class="radio" value="3">
+                    <span class="radio-custom"></span>
+                    <span class="label">
+                      Спайси
+                    </span>
+                  </label>
+                </div>
+              </form>
               <a href="#" class="btn btn-success cards__btn big-card__btn">
                 <div class="cards__basket">
                   <img src="../img/basket2.png" alt="basket">
